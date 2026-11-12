@@ -1,421 +1,589 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Innovative Projects – Modern Architecture and Construction Solutions
-    </title>
+    <title>INNO — Homes shaped around the way you live</title>
     <meta
       name="description"
-      content="Innovative Projects is your go-to source for cutting-edge architecture and construction solutions. Explore our portfolio of modern designs, discover our range of services, and learn how our team of expert architects can bring your vision to life. Stay updated with the latest trends and insights in the field of contemporary architecture and urban planning. Contact us to start your next innovative project today!"
+      content="Thoughtful architecture, warm interiors and furniture made for everyday life. Explore the INNO courtyard house concept and meet the studio."
     />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-
+    <link rel="preload" href="fonts/SourceSans3.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#272727" />
+    <link
+      rel="preload"
+      href="fonts/Questrial-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <meta property="og:title" content="INNO — Homes shaped around the way you live" />
+    <meta
+      property="og:description"
+      content="Thoughtful architecture, warm interiors and furniture made for everyday life. Explore the INNO courtyard house concept and meet the studio."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="header">
       <div class="container flex">
-        <a href="index.html" class="header__logo logo"> INNO </a>
-        <nav class="menu">
+        <a href="index.html" class="header__logo logo" aria-label="INNO — home"
+          ><img src="img/inno-mark.png" width="40" height="40" alt="" /><span>INNO</span></a
+        >
+        <nav class="menu" aria-label="Main navigation" id="main-menu">
           <ul class="menu__list flex">
             <li class="menu__item">
-              <a href="index.html"> Home </a>
+              <a href="index.html" aria-current="page">Home</a>
             </li>
             <li class="menu__item">
-              <a href="about.html"> About Us </a>
+              <a href="about.html">The studio</a>
             </li>
           </ul>
         </nav>
+        <button
+          class="header__toggle"
+          type="button"
+          aria-controls="main-menu"
+          aria-expanded="false"
+          hidden
+        >
+          <img src="img/icon-menu.svg" width="24" height="24" alt="" aria-hidden="true" /><span
+            >Menu</span
+          >
+        </button>
         <div class="header__contacts">
-          <a href="#form" class="header__btn btn">
-            Submit Your Request
-          </a>
+          <a href="#form" class="header__btn btn">Let’s talk</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="main">
+        <img
+          class="main__image"
+          src="img/living-1600.webp"
+          srcset="
+            img/living-480.webp   480w,
+            img/living-800.webp   800w,
+            img/living-1200.webp 1200w,
+            img/living-1600.webp 1600w
+          "
+          sizes="100vw"
+          width="1600"
+          height="900"
+          alt=""
+          fetchpriority="high"
+        />
         <div class="container">
           <div class="main__offer">
-            <h5 class="main__offer_subtitle subtitle">
-              Innovation in Every Structure
-            </h5>
-            <h1 class="main__offer_title title">
-              Cutting-Edge Architecture for <span> Modern Living </span>
-            </h1>
-            <p class="main__offer_desc">
-              Established in 2010, Innovative Projects is dedicated to
-              transforming architectural visions into reality. Specializing in
-              sustainable design, urban planning, and innovative construction
-              solutions, we create spaces that inspire and endure.
+            <p class="main__offer-subtitle subtitle">
+              Architecture, interiors &amp; the details between
             </p>
-            <div class="main__offer_btn-wrap flex">
-              <a href="#form" class="main__offer_btn btn">
-                Discover Our Projects
-              </a>
-              <a href="tel:+915294365716" class="main__offer_btn-tel">
-                Call: +91-529-4365716
-              </a>
+            <h1 class="main__offer-title title">A home that feels like you.</h1>
+            <p class="main__offer-desc">
+              The morning light. A favourite chair. A kitchen where everyone ends up. We design
+              around the small things that make a place yours.
+            </p>
+            <div class="main__offer-btn-wrap flex">
+              <a href="#study" class="main__offer-btn btn">Explore a house</a>
+              <a href="#form" class="main__offer-btn-tel">Start a conversation</a>
             </div>
           </div>
         </div>
       </section>
       <section class="advantages">
+        <h2 class="visually-hidden">What we design</h2>
         <div class="container">
           <div class="advantages__cards flex">
-            <div class="advantages__card">
-              <div class="advantages__card_icon">
+            <article class="advantages__card">
+              <div class="advantages__card-icon">
                 <img
-                  width="70"
-                  height="68"
-                  src="img/advantages-1.png"
-                  alt="Architecture Icon"
+                  class=""
+                  src="img/icon-house.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
               </div>
-              <h3 class="advantages__card_title">Architecture</h3>
-              <p class="advantages__card_desc">
-                Transforming visions into reality with cutting-edge
-                architectural designs that blend aesthetics and functionality.
+              <h3 class="advantages__card-title">Architecture</h3>
+              <p class="advantages__card-desc">
+                Rooms that connect naturally. A plan that makes every metre feel useful.
               </p>
-              <a href="about.html" class="advantages__card_btn btn"> Read More </a>
-            </div>
-            <div class="advantages__card">
-              <div class="advantages__card_icon">
+              <a href="about.html#process" class="advantages__card-btn btn">Explore architecture</a>
+            </article>
+            <article class="advantages__card">
+              <div class="advantages__card-icon">
                 <img
-                  width="70"
-                  height="68"
-                  src="img/advantages-2.png"
-                  alt="Interior Design Icon"
+                  class=""
+                  src="img/icon-sofa.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
               </div>
-              <h3 class="advantages__card_title">Interior Design</h3>
-              <p class="advantages__card_desc">
-                Crafting innovative interior spaces that reflect your
-                personality and style, while ensuring maximum comfort.
+              <h3 class="advantages__card-title">Interior design</h3>
+              <p class="advantages__card-desc">
+                Warm materials, thoughtful lighting and a place for the things you love.
               </p>
-              <a href="about.html" class="advantages__card_btn btn"> Read More </a>
-            </div>
-            <div class="advantages__card">
-              <div class="advantages__card_icon">
+              <a href="about.html#process" class="advantages__card-btn btn">Explore interiors</a>
+            </article>
+            <article class="advantages__card">
+              <div class="advantages__card-icon">
                 <img
-                  width="70"
-                  height="68"
-                  src="img/advantages-3.png"
-                  alt="Furniture Icon"
+                  class=""
+                  src="img/icon-ruler.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
               </div>
-              <h3 class="advantages__card_title">Custom Furniture</h3>
-              <p class="advantages__card_desc">
-                Designing bespoke furniture pieces that complement and enhance
-                your space, marrying form and function.
+              <h3 class="advantages__card-title">Furniture &amp; details</h3>
+              <p class="advantages__card-desc">
+                A bench by the window. Storage that fits. The finishing touches that belong.
               </p>
-              <a href="about.html" class="advantages__card_btn btn"> Read More </a>
-            </div>
+              <a href="about.html#process" class="advantages__card-btn btn">Explore the details</a>
+            </article>
           </div>
         </div>
       </section>
       <section class="about">
         <div class="container flex">
-          <div class="about__img_wrapper">
+          <div class="about__img-wrapper">
             <img
-              src="img/about-img.webp"
-              alt="Modern Building"
               class="about__img"
+              src="img/courtyard-1200.webp"
+              srcset="
+                img/courtyard-480.webp   480w,
+                img/courtyard-800.webp   800w,
+                img/courtyard-1200.webp 1200w
+              "
+              sizes="(max-width: 760px) 100vw, 50vw"
+              width="1200"
+              height="1200"
+              alt="Pale stone courtyard house with oak screens and generous windows"
+              loading="lazy"
+              decoding="async"
             />
-            <div class="about__img_block">
-              <img src="img/advantages-2.png" alt="Experience Icon" />
-              <p class="about__img_block-text">
-                <span>10</span> Years of Experience
-              </p>
+            <div class="about__img-block">
+              <img
+                class=""
+                src="img/icon-sun.svg"
+                width="48"
+                height="48"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="about__img-block-text">Made for<br />daily life.</p>
             </div>
           </div>
-          <div class="about__offer_wrap">
-            <h5 class="about__offer_subtitle subtitle">About Us</h5>
-            <h2 class="about__offer_title title">
-              Innovative Designs for <span>Modern Living</span>
-            </h2>
-            <p class="about__offer_desc">
-              At Innovative Projects, we specialize in creating cutting-edge
-              architectural solutions that blend functionality with modern
-              aesthetics. With over a decade of experience, our team is
-              dedicated to transforming spaces and bringing visionary projects
-              to life.
+          <div class="about__offer-wrap">
+            <p class="about__offer-subtitle subtitle">A thoughtful starting point</p>
+            <h2 class="about__offer-title title">Good design begins with listening.</h2>
+            <p class="about__offer-desc">
+              Before we draw a line, we ask how you live. Where do you gather? What needs more
+              light? What would make an ordinary Tuesday easier? Those answers shape the home, from
+              its first plan to its smallest joint.
             </p>
-            <div class="about__offer_list">
-              <div class="about__offer_item">
+            <div class="about__offer-list">
+              <div class="about__offer-item">
                 <span></span>
-                <p class="about__offer_item-text">
-                  Retail Residential Projects
-                </p>
+                <p class="about__offer-item-text">Practical floor plans</p>
               </div>
-              <div class="about__offer_item">
+              <div class="about__offer-item">
                 <span></span>
-                <p class="about__offer_item-text">Modern Exterior Design</p>
+                <p class="about__offer-item-text">Considered exteriors</p>
               </div>
-              <div class="about__offer_item">
+              <div class="about__offer-item">
                 <span></span>
-                <p class="about__offer_item-text">
-                  Electrical Interior Planning
-                </p>
+                <p class="about__offer-item-text">Comfortable interiors</p>
               </div>
-              <div class="about__offer_item">
+              <div class="about__offer-item">
                 <span></span>
-                <p class="about__offer_item-text">Interior Lighting Plans</p>
+                <p class="about__offer-item-text">Daylight &amp; lighting</p>
               </div>
-              <div class="about__offer_item">
+              <div class="about__offer-item">
                 <span></span>
-                <p class="about__offer_item-text">
-                  Best Communication Practices
-                </p>
+                <p class="about__offer-item-text">Honest conversations</p>
               </div>
-              <div class="about__offer_item">
+              <div class="about__offer-item">
                 <span></span>
-                <p class="about__offer_item-text">Colour Design Services</p>
+                <p class="about__offer-item-text">Materials that age well</p>
               </div>
             </div>
-            <a href="about.html" class="about__offer_btn btn"> Read More </a>
+            <a href="about.html" class="about__offer-btn btn">Inside the studio</a>
           </div>
         </div>
       </section>
       <section class="services">
+        <img
+          class="section-background"
+          src="img/drawings-1600.webp"
+          srcset="
+            img/drawings-480.webp   480w,
+            img/drawings-800.webp   800w,
+            img/drawings-1200.webp 1200w,
+            img/drawings-1600.webp 1600w
+          "
+          sizes="100vw"
+          width="1600"
+          height="900"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+        />
         <div class="container">
           <div class="services__grid">
             <div class="services__cell-offer">
-              <h5 class="services__cell_subtitle subtitle">Services</h5>
-              <h2 class="services__cell_title title">
-                The Best Services <span>We Provide</span>
-              </h2>
-              <p class="services__cell_desc">
-                At Innovative Projects, we offer a comprehensive range of
-                architectural and design services to meet all your needs.
+              <p class="services__cell-subtitle subtitle">How we can help</p>
+              <h2 class="services__cell-title title">One home. A connected approach.</h2>
+              <p class="services__cell-desc">
+                From the outline of a building to the feel of a door handle, each decision belongs
+                to the same story.
               </p>
             </div>
-            <div class="services__cell">
+            <article class="services__cell">
               <div class="services__cell-box">
                 <img
-                  src="img/advantages-2.png"
-                  alt="Home Exterior Design"
                   class="services__cell-img"
+                  src="img/icon-house.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
-                <h4 class="services__cell_title">Home Exterior Design</h4>
-                <p class="services__cell_desc">
-                  Creating stunning and functional exterior designs that enhance
-                  curb appeal and provide lasting value.
+                <h3 class="services__cell-title">Exterior architecture</h3>
+                <p class="services__cell-desc">
+                  Shape, shade and a welcoming entrance. Buildings that sit comfortably in their
+                  surroundings.
                 </p>
-                <a href="about.html" class="services__cell_btn"> Read More </a>
+                <a href="#form" class="services__cell-btn">Discuss exterior architecture</a>
               </div>
-            </div>
-            <div class="services__cell">
+            </article>
+            <article class="services__cell">
               <div class="services__cell-box">
                 <img
-                  src="img/advantages-1.png"
-                  alt="2D/3D Design Layout"
                   class="services__cell-img"
+                  src="img/icon-layers.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
-                <h4 class="services__cell_title">2D/3D Design Layout</h4>
-                <p class="services__cell_desc">
-                  Offering detailed 2D and 3D design layouts to visualize and
-                  perfect your project before construction begins.
+                <h3 class="services__cell-title">Plans &amp; visualisation</h3>
+                <p class="services__cell-desc">
+                  Understand the spaces before they are built, with clear drawings and considered 3D
+                  studies.
                 </p>
-                <a href="about.html" class="services__cell_btn"> Read More </a>
+                <a href="#form" class="services__cell-btn">Discuss plans &amp; visualisation</a>
               </div>
-            </div>
-            <div class="services__cell">
+            </article>
+            <article class="services__cell">
               <div class="services__cell-box">
                 <img
-                  src="img/advantages-3.png"
-                  alt="Furniture Design"
                   class="services__cell-img"
+                  src="img/icon-ruler.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
-                <h4 class="services__cell_title">Furniture Design</h4>
-                <p class="services__cell_desc">
-                  Designing custom furniture pieces that perfectly fit your
-                  space and complement your design aesthetic.
+                <h3 class="services__cell-title">Bespoke furniture</h3>
+                <p class="services__cell-desc">
+                  Pieces designed for the way you use a room, with useful storage and lasting
+                  proportions.
                 </p>
-                <a href="about.html" class="services__cell_btn"> Read More </a>
+                <a href="#form" class="services__cell-btn">Discuss bespoke furniture</a>
               </div>
-            </div>
-            <div class="services__cell">
+            </article>
+            <article class="services__cell">
               <div class="services__cell-box">
                 <img
-                  src="img/advantages-1.png"
-                  alt="Modern Home Interior"
                   class="services__cell-img"
+                  src="img/icon-sofa.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
-                <h4 class="services__cell_title">Modern Home Interior</h4>
-                <p class="services__cell_desc">
-                  Crafting modern interior spaces that reflect your style and
-                  provide comfort and functionality.
+                <h3 class="services__cell-title">Interior design</h3>
+                <p class="services__cell-desc">
+                  Light, colour and texture brought together to make everyday routines feel better.
                 </p>
-                <a href="about.html" class="services__cell_btn"> Read More </a>
+                <a href="#form" class="services__cell-btn">Discuss interior design</a>
               </div>
-            </div>
-            <div class="services__cell">
+            </article>
+            <article class="services__cell">
               <div class="services__cell-box">
                 <img
-                  src="img/advantages-4.png"
-                  alt="Custom Design Plan"
                   class="services__cell-img"
+                  src="img/icon-pencil-ruler.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
                 />
-                <h4 class="services__cell_title">Custom Design Plan</h4>
-                <p class="services__cell_desc">
-                  Developing custom design plans tailored to your unique needs
-                  and preferences, ensuring a personalized touch.
+                <h3 class="services__cell-title">Design development</h3>
+                <p class="services__cell-desc">
+                  Bring the details into focus: material junctions, finishes and a coordinated set
+                  of drawings.
                 </p>
-                <a href="about.html" class="services__cell_btn"> Read More </a>
+                <a href="#form" class="services__cell-btn">Discuss design development</a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="study" aria-labelledby="study-title">
         <div class="container flex">
-          <div class="skills__img">
-            <img src="img/skills.webp" alt="Modern House" />
-          </div>
+          <figure class="skills__img">
+            <img
+              class="study__image"
+              src="img/courtyard-1200.webp"
+              srcset="
+                img/courtyard-480.webp   480w,
+                img/courtyard-800.webp   800w,
+                img/courtyard-1200.webp 1200w
+              "
+              sizes="(max-width: 760px) 100vw, 50vw"
+              width="1200"
+              height="1200"
+              alt="Courtyard house exterior in pale limestone with oak screens"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption class="study__caption" id="study-caption">
+              Exterior · Sheltered rooms arranged around a planted courtyard.
+            </figcaption>
+          </figure>
           <div class="skills__offer">
-            <h5 class="skills__offer_subtitle subtitle">Skills</h5>
-            <h2 class="skills__offer_title title">
-              Our Expertise and <span>Skills</span>
-            </h2>
-            <div class="skills__offer_progress-wrap">
-              <div class="skills__offer_progress">
-                <p>Interior Design <span>80%</span></p>
-                <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width: 80%"></div>
-                </div>
-              </div>
-              <div class="skills__offer_progress">
-                <p>Home Exterior <span>90%</span></p>
-                <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skills__offer_progress">
-                <p>Furniture Design <span>75%</span></p>
-                <div class="progress-bar">
-                  <div class="progress-bar-inner" style="width: 75%"></div>
-                </div>
-              </div>
+            <p class="subtitle">Courtyard House · concept study</p>
+            <h2 class="skills__offer-title" id="study-title">One house, three ways to look.</h2>
+            <p>
+              A quiet place to gather, with a garden at its heart. Explore the relationship between
+              the building, the rooms and the materials.
+            </p>
+            <div class="study__controls" role="group" aria-label="Choose a view" hidden>
+              <button class="study__button" type="button" data-view="courtyard" aria-pressed="true">
+                Exterior<span>Space &amp; shelter</span></button
+              ><button class="study__button" type="button" data-view="living" aria-pressed="false">
+                Interior<span>Light &amp; connection</span></button
+              ><button
+                class="study__button"
+                type="button"
+                data-view="materials"
+                aria-pressed="false"
+              >
+                Details<span>Texture &amp; craft</span>
+              </button>
             </div>
+            <p class="study__status visually-hidden" aria-live="polite"></p>
+            <a class="study__link" href="about.html#process">How a project takes shape</a>
           </div>
         </div>
       </section>
       <section class="contacts-section" id="form">
+        <img
+          class="section-background"
+          src="img/evening-1600.webp"
+          srcset="
+            img/evening-480.webp   480w,
+            img/evening-800.webp   800w,
+            img/evening-1200.webp 1200w,
+            img/evening-1600.webp 1600w
+          "
+          sizes="100vw"
+          width="1600"
+          height="900"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+        />
         <div class="container">
-          <div class="contacts__offer_wrap flex">
-            <div class="contacts__offer_title-wrap">
-              <h5 class="contacts__offer_subtitle subtitle">Contact</h5>
-              <h2 class="contacts__offer_title title">Our Achievements</h2>
-              <p class="contacts__offer_desc">
-                Celebrating our milestones and accomplishments in the field of
-                modern architecture and design. Our dedication to excellence has
-                earned us numerous awards and the satisfaction of countless
-                clients.
+          <div class="contacts__offer-wrap flex">
+            <div class="contacts__offer-title-wrap">
+              <p class="contacts__offer-subtitle subtitle">What stays with a home</p>
+              <h2 class="contacts__offer-title title">The things you notice every day.</h2>
+              <p class="contacts__offer-desc">
+                A good home earns its place quietly: in the light at breakfast, a comfortable
+                corner, and materials that grow more beautiful with use.
               </p>
             </div>
-            <div class="contacts__offer-advantages_wrap">
+            <div class="contacts__offer-advantages-wrap">
               <div class="contacts__offer-advantages">
-                <img src="img/advantages-1.png" alt="Project Icon" />
-                <h4 class="contacts__offer-advantages_title">Projects</h4>
-                <div class="contacts__offer-advantages_line"></div>
-                <p class="contacts__offer-advantages_desc">15K</p>
+                <img
+                  class=""
+                  src="img/icon-house.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h3 class="contacts__offer-advantages-title">Space</h3>
+                <div class="contacts__offer-advantages-line"></div>
+                <p class="contacts__offer-advantages-desc">Room to live</p>
               </div>
               <div class="contacts__offer-advantages">
-                <img src="img/happy-client.png" alt="Happy Clients Icon" />
-                <h4 class="contacts__offer-advantages_title">Happy Clients</h4>
-                <div class="contacts__offer-advantages_line"></div>
-                <p class="contacts__offer-advantages_desc">4K</p>
+                <img
+                  class=""
+                  src="img/icon-sun.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h3 class="contacts__offer-advantages-title">Light</h3>
+                <div class="contacts__offer-advantages-line"></div>
+                <p class="contacts__offer-advantages-desc">A daily rhythm</p>
               </div>
               <div class="contacts__offer-advantages">
-                <img src="img/ergineers.png" alt="Engineers Icon" />
-                <h4 class="contacts__offer-advantages_title">Engineers</h4>
-                <div class="contacts__offer-advantages_line"></div>
-                <p class="contacts__offer-advantages_desc">89</p>
+                <img
+                  class=""
+                  src="img/icon-leaf.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h3 class="contacts__offer-advantages-title">Materials</h3>
+                <div class="contacts__offer-advantages-line"></div>
+                <p class="contacts__offer-advantages-desc">Made to last</p>
               </div>
               <div class="contacts__offer-advantages">
-                <img src="img/award-win.png" alt="Award Icon" />
-                <h4 class="contacts__offer-advantages_title">Awards Won</h4>
-                <div class="contacts__offer-advantages_line"></div>
-                <p class="contacts__offer-advantages_desc">1.5K</p>
+                <img
+                  class=""
+                  src="img/icon-ruler.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <h3 class="contacts__offer-advantages-title">Details</h3>
+                <div class="contacts__offer-advantages-line"></div>
+                <p class="contacts__offer-advantages-desc">Care at every scale</p>
               </div>
             </div>
           </div>
           <div class="form__wrapper">
             <div class="form__left">
-              <h3>Our Offices</h3>
-              <div class="form__left_office">
-                <h4>Office</h4>
+              <h2>A good place to begin</h2>
+              <p class="form__intro">
+                A home starts with a conversation: what matters to you, what works today, and what
+                could feel better.
+              </p>
+              <div class="form__left-office">
+                <h3>Office</h3>
                 <a
                   href="https://maps.app.goo.gl/ZBCdWFfsN4R4Xr4q7"
                   target="_blank"
-                  rel="nofollow"
+                  rel="noopener noreferrer nofollow"
                   class="footer__adress adress"
+                  >B-239, Block A, Indira Nagar, Lucknow, Uttar Pradesh 226016, India</a
                 >
-                  Adress: B-239, Block A, Indira Nagar, Lucknow, Uttar Pradesh
-                  226016, India
-                </a>
               </div>
-              <div class="form__left_office">
-                <h4>Phone</h4>
-                <a href="tel:+915294365716" class="footer__tel tel">
-                  Phone: +91-529-4365716
-                </a>
+              <div class="form__left-office">
+                <h3>Phone</h3>
+                <a href="tel:+915294365716" class="footer__tel tel">+91-529-4365716</a>
               </div>
-              <div class="form__left_office">
-                <h4>E-mail</h4>
-                <a
-                  href="mailto:innovativeprojects@gmail.com"
-                  class="footer__mail mail"
+              <div class="form__left-office">
+                <h3>E-mail</h3>
+                <a href="mailto:innovativeprojects@gmail.com" class="footer__mail mail"
+                  >innovativeprojects@gmail.com</a
                 >
-                  E-mail: innovativeprojects@gmail.com
-                </a>
               </div>
+              <p class="form__demo">
+                Portfolio concept. The studio and contact details are illustrative.
+              </p>
             </div>
-            <form class="form">
-              <h3>Drop Us a Message</h3>
-              <div class="form__group">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
+            <form
+              class="form"
+              action="thanks.html"
+              method="get"
+              novalidate
+              aria-labelledby="form-title"
+            >
+              <h2 id="form-title">What would you love to come home to?</h2>
+              <p id="form-note" class="form__note">
+                Try the enquiry form. This portfolio demo checks your entries without sending or
+                saving them.
+              </p>
+              <div class="form__errors" tabindex="-1" hidden>
+                <h3>Please check your enquiry</h3>
+                <ul></ul>
               </div>
-              <div class="form__group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-Mail"
-                  required
-                />
-              </div>
-              <div class="form__group">
-                <textarea
-                  name="message"
-                  placeholder="Write Message"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <div class="form-checkbox flex">
-                <input
-                  type="checkbox"
-                  name="privacy"
-                  value="on"
-                  id="checkbox"
-                  required
-                />
-                <a for="privacy" href="privacy-policy.html"
-                  >I accept Privacy policy</a
-                >
-              </div>
-              <div class="form__group">
-                <button type="submit" class="form__btn">Send Now</button>
-              </div>
+              <fieldset disabled aria-describedby="form-note">
+                <legend class="visually-hidden">Project enquiry</legend>
+                <div class="form__group">
+                  <label for="name">Your name <span>(required)</span></label
+                  ><input
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    maxlength="80"
+                    required
+                    aria-describedby="name-error"
+                  />
+                  <p class="form__error" id="name-error" hidden></p>
+                </div>
+                <div class="form__group">
+                  <label for="email">Email address <span>(required)</span></label
+                  ><input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    maxlength="254"
+                    required
+                    aria-describedby="email-error"
+                  />
+                  <p class="form__error" id="email-error" hidden></p>
+                </div>
+                <div class="form__group">
+                  <label for="message">Tell us about your space <span>(required)</span></label
+                  ><textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    maxlength="2000"
+                    required
+                    aria-describedby="message-hint message-error"
+                  ></textarea>
+                  <p class="form__hint" id="message-hint">
+                    A new home, a room that needs rethinking, or just a first idea.
+                  </p>
+                  <p class="form__error" id="message-error" hidden></p>
+                </div>
+                <div class="form__consent">
+                  <input
+                    id="privacy"
+                    name="privacy"
+                    type="checkbox"
+                    required
+                    aria-describedby="privacy-error"
+                  /><label for="privacy"
+                    >I have read the <a href="privacy-policy.html">privacy notice</a>.
+                    <span>(required)</span></label
+                  >
+                </div>
+                <p class="form__error" id="privacy-error" hidden></p>
+                <button type="submit" class="form__btn">Preview my enquiry</button>
+              </fieldset>
+              <noscript
+                ><p class="form__note">
+                  JavaScript is needed to try this demo form. You can still browse the complete
+                  site.
+                </p></noscript
+              >
             </form>
           </div>
         </div>
@@ -424,30 +592,32 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top flex">
-          <a href="index.html" class="footer__logo logo"> INNO </a>
-          <nav class="menu">
+          <a href="index.html" class="footer__logo logo" aria-label="INNO — home"
+            ><img src="img/inno-mark.png" width="40" height="40" alt="" /><span>INNO</span></a
+          >
+          <nav class="menu" aria-label="Footer navigation">
             <ul class="menu__list flex">
               <li class="menu__item">
-                <a href="index.html"> Home </a>
+                <a href="index.html" aria-current="page">Home</a>
               </li>
               <li class="menu__item">
-                <a href="about.html"> About Us </a>
+                <a href="about.html">The studio</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="footer_bot flex">
-          <a href="privacy-policy.html" class="footer__bot-policy"
-            >Privacy policy</a
-          >
+        <p class="footer__note">
+          Architecture with room for real life.<br />Concept portfolio · Generated imagery and
+          fictional team.
+        </p>
+        <div class="footer-bot flex">
+          <a href="privacy-policy.html" class="footer__bot-policy">Privacy policy</a>
           <span>|</span>
-          <a href="terms-conditions.html" class="footer__bot-policy"
-            >Terms and Conditions</a
-          >
+          <a href="terms-conditions.html" class="footer__bot-policy">Terms and Conditions</a>
         </div>
       </div>
     </footer>
 
-    <script src="js/scroll.js"></script>
+    <script src="js/scroll.js" defer></script>
   </body>
 </html>

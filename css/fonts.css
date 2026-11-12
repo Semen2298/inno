@@ -1,6 +1,14 @@
 @font-face {
-  font-family: "Questrial", sans-serif;
-  src: url("../fonts/Questrial-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: 'Questrial';
   font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Questrial-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url('../fonts/SourceSans3.woff2') format('woff2');
 }

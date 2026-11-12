@@ -1,258 +1,454 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      About Us - Innovative Projects | Modern Architecture and Design Excellence
-    </title>
+    <title>Inside the studio — INNO</title>
     <meta
       name="description"
-      content="Discover the vision and expertise behind Innovative Projects. With over 25 years of experience, our team of dedicated professionals specializes in creating modern, stylish, and functional architectural designs. Learn more about our commitment to innovation, sustainability, and excellence in every project we undertake. Explore our journey, values, and the unique approach that sets us apart in the world of contemporary architecture and design."
+      content="Meet the people, materials and careful conversations behind INNO. See how a first idea becomes a considered home, step by step."
     />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-
+    <link rel="preload" href="fonts/SourceSans3.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#272727" />
+    <link
+      rel="preload"
+      href="fonts/Questrial-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <meta property="og:title" content="Inside the studio — INNO" />
+    <meta
+      property="og:description"
+      content="Meet the people, materials and careful conversations behind INNO. See how a first idea becomes a considered home, step by step."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="header">
       <div class="container flex">
-        <a href="index.html" class="header__logo logo"> INNO </a>
-        <nav class="menu">
+        <a href="index.html" class="header__logo logo" aria-label="INNO — home"
+          ><img src="img/inno-mark.png" width="40" height="40" alt="" /><span>INNO</span></a
+        >
+        <nav class="menu" aria-label="Main navigation" id="main-menu">
           <ul class="menu__list flex">
             <li class="menu__item">
-              <a href="index.html"> Home </a>
+              <a href="index.html">Home</a>
             </li>
             <li class="menu__item">
-              <a href="about.html"> About Us </a>
+              <a href="about.html" aria-current="page">The studio</a>
             </li>
           </ul>
         </nav>
+        <button
+          class="header__toggle"
+          type="button"
+          aria-controls="main-menu"
+          aria-expanded="false"
+          hidden
+        >
+          <img src="img/icon-menu.svg" width="24" height="24" alt="" aria-hidden="true" /><span
+            >Menu</span
+          >
+        </button>
         <div class="header__contacts">
-          <a href="#form" class="header__btn btn">
-            Submit Your Request
-          </a>
+          <a href="#form" class="header__btn btn">Let’s talk</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="about-main">
         <div class="container">
           <div class="about-main__offer">
-            <h1 class="about-main__title">About Us</h1>
-            <div class="about-main__links">
+            <h1 class="about-main__title">Inside the studio</h1>
+            <nav class="about-main__links" aria-label="Breadcrumb">
               <a href="index.html" class="about-main__link"> Home </a>
               <span></span>
-              <a href="about.html" class="about-main__link"> About Us </a>
-            </div>
+              <a href="about.html" class="about-main__link" aria-current="page">The studio</a>
+            </nav>
           </div>
         </div>
       </section>
       <section class="about-us">
         <div class="container flex">
-          <div class="about-us__img_wrapper">
+          <div class="about-us__img-wrapper">
             <img
-              src="img/about-us.webp"
-              alt="Modern Home Interior"
               class="about-us__img"
+              src="img/worktable-1200.webp"
+              srcset="
+                img/worktable-480.webp   480w,
+                img/worktable-800.webp   800w,
+                img/worktable-1200.webp 1200w
+              "
+              sizes="(max-width: 760px) 100vw, 50vw"
+              width="1200"
+              height="1200"
+              alt="Two architects discussing a courtyard house model and material samples"
+              loading="lazy"
+              decoding="async"
             />
-            <div class="about-us__img_block">
-              <p class="about-us__img_block-text">
-                <span>25</span> Years of Experience
-              </p>
+            <div class="about-us__img-block">
+              <p class="about-us__img-block-text">From first sketch to final detail.</p>
             </div>
           </div>
-          <div class="about-us__offer_wrap">
-            <h5 class="about-us__offer_subtitle subtitle">About Us</h5>
-            <h2 class="about-us__offer_title title">
-              Simple Minimal Modern <span>Home Interior</span>
-            </h2>
-            <p class="about-us__offer_desc">
-              At Innovative Projects, we specialize in creating stylish and
-              modern home interiors that perfectly blend form and function. With
-              over 25 years of experience, our team is dedicated to delivering
-              high-quality designs that meet the unique needs of each client.
+          <div class="about-us__offer-wrap">
+            <p class="about-us__offer-subtitle subtitle">Our way of working</p>
+            <h2 class="about-us__offer-title title">A small studio. A shared curiosity.</h2>
+            <p class="about-us__offer-desc">
+              We are drawn to homes that feel easy to live in. Not a picture-perfect room that
+              nobody uses, but a place with a well-worn table, good light and enough space to be
+              yourself. That is where our conversations begin.
             </p>
-            <div class="about-us__offer_list">
-              <div class="about-us__offer_item">
-                <img src="img/advantages-1.png" alt="Modern Home Interior" />
-                <p class="about-us__offer_item-text">
-                  Modern home interior stylish design
+            <div class="about-us__offer-list">
+              <div class="about-us__offer-item">
+                <img
+                  class=""
+                  src="img/icon-messages-square.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <p class="about-us__offer-item-text">
+                  We listen closely, then make the choices clear.
                 </p>
               </div>
-              <div class="about-us__offer_item">
-                <img src="img/advantages-2.png" alt="Luxury Exterior" />
-                <p class="about-us__offer_item-text">
-                  Luxury exterior modern building
+              <div class="about-us__offer-item">
+                <img
+                  class=""
+                  src="img/icon-leaf.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+                <p class="about-us__offer-item-text">
+                  We favour useful spaces and materials with a long life.
                 </p>
               </div>
             </div>
-            <div class="about-us__offer_line"></div>
-            <div class="about-us__offer_quote">
-              <div class="about-us__offer_quote-img">
-                <img src="img/marks.svg" alt="Quote Icon" />
+            <div class="about-us__offer-line"></div>
+            <blockquote class="about-us__offer-quote">
+              <div class="about-us__offer-quote-img">
+                <img
+                  class=""
+                  src="img/icon-quote.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
               </div>
-              <p class="about-us__offer_quote-text">
-                "If you will be copying someone's design style or element, you
-                will never be the best designer in the future."
+              <p class="about-us__offer-quote-text">
+                A room should make you want to stay a little longer. That is a good place to start.
               </p>
-            </div>
+            </blockquote>
           </div>
         </div>
       </section>
       <section class="expert">
         <div class="container">
-          <h5 class="expert__subtitle subtitle">Engineers</h5>
-          <h2 class="expert__title title">Expert <span>Team</span></h2>
+          <p class="expert__subtitle subtitle">People behind the drawings</p>
+          <h2 class="expert__title title">Different eyes. One considered home.</h2>
           <div class="expert__cards flex">
-            <div class="expert__card">
-              <img src="img/expert-1.webp" alt="Resta Wany" />
-              <h3 class="expert__card_name">Resta Wany</h3>
-              <p class="expert__card_desc">Civil Engineer</p>
-            </div>
-            <div class="expert__card">
-              <img src="img/expert-2.webp" alt="Jack Martin" />
-              <h3 class="expert__card_name">Jack Martin</h3>
-              <p class="expert__card_desc">AI Designer</p>
-            </div>
-            <div class="expert__card">
-              <img src="img/expert-3.webp" alt="Amelia Daniel" />
-              <h3 class="expert__card_name">Amelia Daniel</h3>
-              <p class="expert__card_desc">Civil Engineer</p>
-            </div>
-            <div class="expert__card">
-              <img src="img/expert-4.webp" alt="Rusha Shen" />
-              <h3 class="expert__card_name">Rusha Shen</h3>
-              <p class="expert__card_desc">Managing Director</p>
-            </div>
+            <article class="expert__card">
+              <img
+                class=""
+                src="img/maya-1200.webp"
+                srcset="img/maya-480.webp 480w, img/maya-800.webp 800w, img/maya-1200.webp 1200w"
+                sizes="(max-width: 480px) 100vw, (max-width: 990px) 50vw, 25vw"
+                width="1200"
+                height="1200"
+                alt="Maya Reed in the model-making studio"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="expert__card-name">Maya Reed</h3>
+              <p class="expert__card-desc">Architecture</p>
+            </article>
+            <article class="expert__card">
+              <img
+                class=""
+                src="img/jonah-1200.webp"
+                srcset="img/jonah-480.webp 480w, img/jonah-800.webp 800w, img/jonah-1200.webp 1200w"
+                sizes="(max-width: 480px) 100vw, (max-width: 990px) 50vw, 25vw"
+                width="1200"
+                height="1200"
+                alt="Jonah Ellis in the model-making studio"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="expert__card-name">Jonah Ellis</h3>
+              <p class="expert__card-desc">Technical design</p>
+            </article>
+            <article class="expert__card">
+              <img
+                class=""
+                src="img/lea-1200.webp"
+                srcset="img/lea-480.webp 480w, img/lea-800.webp 800w, img/lea-1200.webp 1200w"
+                sizes="(max-width: 480px) 100vw, (max-width: 990px) 50vw, 25vw"
+                width="1200"
+                height="1200"
+                alt="Lea Moreau in the model-making studio"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="expert__card-name">Lea Moreau</h3>
+              <p class="expert__card-desc">Interiors &amp; materials</p>
+            </article>
+            <article class="expert__card">
+              <img
+                class=""
+                src="img/daniel-1200.webp"
+                srcset="
+                  img/daniel-480.webp   480w,
+                  img/daniel-800.webp   800w,
+                  img/daniel-1200.webp 1200w
+                "
+                sizes="(max-width: 480px) 100vw, (max-width: 990px) 50vw, 25vw"
+                width="1200"
+                height="1200"
+                alt="Daniel Hart in the model-making studio"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3 class="expert__card-name">Daniel Hart</h3>
+              <p class="expert__card-desc">Studio direction</p>
+            </article>
           </div>
+          <p class="expert__note">An illustrative team created for this portfolio concept.</p>
         </div>
       </section>
-      <section class="work-process">
+      <section class="work-process" id="process">
         <div class="container">
-          <h5 class="work-process__subtitle subtitle">Work Process</h5>
-          <h2 class="work-process__title title">
-            We Follow the <span>Stages</span>
-          </h2>
+          <p class="work-process__subtitle subtitle">From conversation to construction</p>
+          <h2 class="work-process__title title">A clear path, with room to think.</h2>
           <div class="work-process__steps flex">
-            <div class="work-process__step">
-              <div class="work-process__step-icon">
-                <img src="img/advantages-1.png" alt="Idea Generate" />
+            <details class="work-process__step" open>
+              <summary>
+                <span class="work-process__number">01</span>
+                <h3 class="work-process__step-title">Listen</h3>
+                <img
+                  class="work-process__chevron"
+                  src="img/icon-chevron-down.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </summary>
+              <div class="work-process__body">
+                <p class="work-process__step-desc">
+                  We talk about your routines, your site and your priorities. Together, we write a
+                  brief and agree what the project needs to do.
+                </p>
+                <p class="work-process__result">A clear brief and shared priorities.</p>
               </div>
-              <h3 class="work-process__step-title">Idea Generation</h3>
-              <p class="work-process__step-desc">
-                We start by brainstorming and generating innovative ideas
-                tailored to your needs.
-              </p>
-            </div>
-            <div class="work-process__step">
-              <div class="work-process__step-icon">
-                <img src="img/advantages-2.png" alt="Design Plan" />
+            </details>
+            <details class="work-process__step" open>
+              <summary>
+                <span class="work-process__number">02</span>
+                <h3 class="work-process__step-title">Explore</h3>
+                <img
+                  class="work-process__chevron"
+                  src="img/icon-chevron-down.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </summary>
+              <div class="work-process__body">
+                <p class="work-process__step-desc">
+                  Plans, sketches and a simple model let us test ideas together. We talk through the
+                  trade-offs before choosing a direction.
+                </p>
+                <p class="work-process__result">A concept you can understand and discuss.</p>
               </div>
-              <h3 class="work-process__step-title">Design Planning</h3>
-              <p class="work-process__step-desc">
-                Our team creates detailed design plans to ensure every aspect of
-                your project is meticulously planned.
-              </p>
-            </div>
-            <div class="work-process__step">
-              <div class="work-process__step-icon">
-                <img src="img/work.png" alt="Sketching" />
+            </details>
+            <details class="work-process__step" open>
+              <summary>
+                <span class="work-process__number">03</span>
+                <h3 class="work-process__step-title">Resolve</h3>
+                <img
+                  class="work-process__chevron"
+                  src="img/icon-chevron-down.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </summary>
+              <div class="work-process__body">
+                <p class="work-process__step-desc">
+                  We bring materials, lighting and technical details into one coordinated design,
+                  reviewing the decisions that matter most.
+                </p>
+                <p class="work-process__result">Drawings and a considered material palette.</p>
               </div>
-              <h3 class="work-process__step-title">Sketching</h3>
-              <p class="work-process__step-desc">
-                We provide comprehensive sketches to give you a clear vision of
-                the final outcome.
-              </p>
-            </div>
-            <div class="work-process__step">
-              <div class="work-process__step-icon">
-                <img src="img/advantages-4.png" alt="Start Project" />
+            </details>
+            <details class="work-process__step" open>
+              <summary>
+                <span class="work-process__number">04</span>
+                <h3 class="work-process__step-title">Make</h3>
+                <img
+                  class="work-process__chevron"
+                  src="img/icon-chevron-down.svg"
+                  width="48"
+                  height="48"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </summary>
+              <div class="work-process__body">
+                <p class="work-process__step-desc">
+                  The design becomes a guide for the people making it. Questions are worked through
+                  carefully as the spaces take shape.
+                </p>
+                <p class="work-process__result">
+                  A shared reference for bringing the design to life.
+                </p>
               </div>
-              <h3 class="work-process__step-title">Project Initiation</h3>
-              <p class="work-process__step-desc">
-                Our team begins the project, turning ideas and plans into
-                reality with precision and care.
-              </p>
-            </div>
+            </details>
           </div>
         </div>
       </section>
       <section class="contacts-section" id="form">
+        <img
+          class="section-background"
+          src="img/evening-1600.webp"
+          srcset="
+            img/evening-480.webp   480w,
+            img/evening-800.webp   800w,
+            img/evening-1200.webp 1200w,
+            img/evening-1600.webp 1600w
+          "
+          sizes="100vw"
+          width="1600"
+          height="900"
+          alt=""
+          loading="lazy"
+          decoding="async"
+          fetchpriority="low"
+        />
         <div class="container">
           <div class="form__wrapper">
             <div class="form__left">
-              <h3>Our Offices</h3>
-              <div class="form__left_office">
-                <h4>Office</h4>
+              <h2>A good place to begin</h2>
+              <p class="form__intro">
+                A home starts with a conversation: what matters to you, what works today, and what
+                could feel better.
+              </p>
+              <div class="form__left-office">
+                <h3>Office</h3>
                 <a
                   href="https://maps.app.goo.gl/ZBCdWFfsN4R4Xr4q7"
                   target="_blank"
-                  rel="nofollow"
+                  rel="noopener noreferrer nofollow"
                   class="footer__adress adress"
+                  >B-239, Block A, Indira Nagar, Lucknow, Uttar Pradesh 226016, India</a
                 >
-                  Adress: B-239, Block A, Indira Nagar, Lucknow, Uttar Pradesh
-                  226016, India
-                </a>
               </div>
-              <div class="form__left_office">
-                <h4>Phone</h4>
-                <a href="tel:+915294365716" class="footer__tel tel">
-                  Phone: +91-529-4365716
-                </a>
+              <div class="form__left-office">
+                <h3>Phone</h3>
+                <a href="tel:+915294365716" class="footer__tel tel">+91-529-4365716</a>
               </div>
-              <div class="form__left_office">
-                <h4>E-mail</h4>
-                <a
-                  href="mailto:innovativeprojects@gmail.com"
-                  class="footer__mail mail"
+              <div class="form__left-office">
+                <h3>E-mail</h3>
+                <a href="mailto:innovativeprojects@gmail.com" class="footer__mail mail"
+                  >innovativeprojects@gmail.com</a
                 >
-                  E-mail: innovativeprojects@gmail.com
-                </a>
               </div>
+              <p class="form__demo">
+                Portfolio concept. The studio and contact details are illustrative.
+              </p>
             </div>
-            <form class="form">
-              <h3>Drop Us a Message</h3>
-              <div class="form__group">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
+            <form
+              class="form"
+              action="thanks.html"
+              method="get"
+              novalidate
+              aria-labelledby="form-title"
+            >
+              <h2 id="form-title">What would you love to come home to?</h2>
+              <p id="form-note" class="form__note">
+                Try the enquiry form. This portfolio demo checks your entries without sending or
+                saving them.
+              </p>
+              <div class="form__errors" tabindex="-1" hidden>
+                <h3>Please check your enquiry</h3>
+                <ul></ul>
               </div>
-              <div class="form__group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-Mail"
-                  required
-                />
-              </div>
-              <div class="form__group">
-                <textarea
-                  name="message"
-                  placeholder="Write Message"
-                  rows="4"
-                  required
-                ></textarea>
-              </div>
-              <div class="form-checkbox flex">
-                <input
-                  type="checkbox"
-                  name="privacy"
-                  value="on"
-                  id="checkbox"
-                  required
-                />
-                <a for="privacy" href="privacy-policy.html"
-                  >I accept Privacy policy</a
-                >
-              </div>
-              <div class="form__group">
-                <button type="submit" class="form__btn">Send Now</button>
-              </div>
+              <fieldset disabled aria-describedby="form-note">
+                <legend class="visually-hidden">Project enquiry</legend>
+                <div class="form__group">
+                  <label for="name">Your name <span>(required)</span></label
+                  ><input
+                    id="name"
+                    name="name"
+                    autocomplete="name"
+                    maxlength="80"
+                    required
+                    aria-describedby="name-error"
+                  />
+                  <p class="form__error" id="name-error" hidden></p>
+                </div>
+                <div class="form__group">
+                  <label for="email">Email address <span>(required)</span></label
+                  ><input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    maxlength="254"
+                    required
+                    aria-describedby="email-error"
+                  />
+                  <p class="form__error" id="email-error" hidden></p>
+                </div>
+                <div class="form__group">
+                  <label for="message">Tell us about your space <span>(required)</span></label
+                  ><textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    maxlength="2000"
+                    required
+                    aria-describedby="message-hint message-error"
+                  ></textarea>
+                  <p class="form__hint" id="message-hint">
+                    A new home, a room that needs rethinking, or just a first idea.
+                  </p>
+                  <p class="form__error" id="message-error" hidden></p>
+                </div>
+                <div class="form__consent">
+                  <input
+                    id="privacy"
+                    name="privacy"
+                    type="checkbox"
+                    required
+                    aria-describedby="privacy-error"
+                  /><label for="privacy"
+                    >I have read the <a href="privacy-policy.html">privacy notice</a>.
+                    <span>(required)</span></label
+                  >
+                </div>
+                <p class="form__error" id="privacy-error" hidden></p>
+                <button type="submit" class="form__btn">Preview my enquiry</button>
+              </fieldset>
+              <noscript
+                ><p class="form__note">
+                  JavaScript is needed to try this demo form. You can still browse the complete
+                  site.
+                </p></noscript
+              >
             </form>
           </div>
         </div>
@@ -261,30 +457,32 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-top flex">
-          <a href="index.html" class="footer__logo logo"> INNO </a>
-          <nav class="menu">
+          <a href="index.html" class="footer__logo logo" aria-label="INNO — home"
+            ><img src="img/inno-mark.png" width="40" height="40" alt="" /><span>INNO</span></a
+          >
+          <nav class="menu" aria-label="Footer navigation">
             <ul class="menu__list flex">
               <li class="menu__item">
-                <a href="index.html"> Home </a>
+                <a href="index.html">Home</a>
               </li>
               <li class="menu__item">
-                <a href="about.html"> About Us </a>
+                <a href="about.html" aria-current="page">The studio</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="footer_bot flex">
-          <a href="privacy-policy.html" class="footer__bot-policy"
-            >Privacy policy</a
-          >
+        <p class="footer__note">
+          Architecture with room for real life.<br />Concept portfolio · Generated imagery and
+          fictional team.
+        </p>
+        <div class="footer-bot flex">
+          <a href="privacy-policy.html" class="footer__bot-policy">Privacy policy</a>
           <span>|</span>
-          <a href="terms-conditions.html" class="footer__bot-policy"
-            >Terms and Conditions</a
-          >
+          <a href="terms-conditions.html" class="footer__bot-policy">Terms and Conditions</a>
         </div>
       </div>
     </footer>
 
-    <script src="js/scroll.js"></script>
+    <script src="js/scroll.js" defer></script>
   </body>
 </html>

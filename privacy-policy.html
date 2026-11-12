@@ -1,204 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Privacy Policy - Innovative Projects | Protecting Your Information
-    </title>
+    <title>Privacy notice — INNO portfolio demo</title>
     <meta
       name="description"
-      content="At Innovative Projects, your privacy is our priority. Read our comprehensive privacy policy to understand how we collect, use, and protect your personal information. We are committed to maintaining the confidentiality and security of your data."
+      content="How the INNO portfolio demo handles form entries, local assets and external links."
     />
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-
+    <link rel="preload" href="fonts/SourceSans3.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="64x64" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#272727" />
+    <link
+      rel="preload"
+      href="fonts/Questrial-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <meta property="og:title" content="Privacy notice — INNO portfolio demo" />
+    <meta
+      property="og:description"
+      content="How the INNO portfolio demo handles form entries, local assets and external links."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="header header-fixed">
       <div class="container flex">
-        <a href="index.html" class="header__logo logo"> INNO </a>
-        <nav class="menu">
+        <a href="index.html" class="header__logo logo" aria-label="INNO — home"
+          ><img src="img/inno-mark.png" width="40" height="40" alt="" /><span>INNO</span></a
+        >
+        <nav class="menu" aria-label="Main navigation" id="main-menu">
           <ul class="menu__list flex">
             <li class="menu__item">
-              <a href="index.html"> Home </a>
+              <a href="index.html">Home</a>
             </li>
             <li class="menu__item">
-              <a href="about.html"> About Us </a>
+              <a href="about.html">The studio</a>
             </li>
           </ul>
         </nav>
+        <button
+          class="header__toggle"
+          type="button"
+          aria-controls="main-menu"
+          aria-expanded="false"
+          hidden
+        >
+          <img src="img/icon-menu.svg" width="24" height="24" alt="" aria-hidden="true" /><span
+            >Menu</span
+          >
+        </button>
         <div class="header__contacts">
-          <a href="tel:+913476183594" class="header__btn btn">
-            Submit Your Request
-          </a>
+          <a href="index.html#form" class="header__btn btn">Let’s talk</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main-content" tabindex="-1">
       <section class="policy">
         <div class="container">
-          <h1>Privacy Policy</h1>
-          <p>
-            At Innovative Projects, we are committed to protecting and
-            respecting your privacy. This Privacy Policy explains how we
-            collect, use, and protect your personal information when you visit
-            our website or use our services.
+          <h1>Privacy notice</h1>
+          <p class="policy__intro">
+            This is a portfolio demonstration of a fictional architecture studio. You can explore
+            the design and try the enquiry form without sending personal information.
           </p>
-
-          <h2>Information We Collect</h2>
-          <p>We may collect and process the following data about you:</p>
-          <ul>
-            <li>
-              <strong>Personal Information:</strong> When you fill out forms on
-              our website, such as contact forms or subscription forms, we may
-              collect your name, email address, phone number, and other personal
-              details.
-            </li>
-            <li>
-              <strong>Technical Information:</strong> We may collect information
-              about your visit to our website, including your IP address,
-              browser type and version, time zone setting, browser plug-in types
-              and versions, operating system and platform, and other technology
-              on the devices you use to access our website.
-            </li>
-            <li>
-              <strong>Usage Information:</strong> Information about how you use
-              our website, such as the pages you visit, the links you click, and
-              other actions you take on our website.
-            </li>
-          </ul>
-
-          <h2>How We Use Your Information</h2>
+          <h2>The enquiry form</h2>
           <p>
-            We use the information we collect about you in the following ways:
+            Entries are checked in your browser. The form does not submit them to a server, put them
+            in the address bar, or save them in browser storage. Successful validation opens a
+            demonstration confirmation page. Please use sample details when trying the form.
           </p>
-          <ul>
-            <li>
-              <strong>To Provide Services:</strong> To provide you with the
-              information, products, and services that you request from us.
-            </li>
-            <li>
-              <strong>To Improve Our Website:</strong> To ensure that content
-              from our website is presented in the most effective manner for you
-              and for your computer.
-            </li>
-            <li>
-              <strong>To Communicate with You:</strong> To respond to your
-              inquiries and provide customer support.
-            </li>
-            <li>
-              <strong>To Send Promotional Materials:</strong> To send you
-              newsletters, marketing materials, and other information that may
-              be of interest to you, where you have consented to be contacted
-              for such purposes.
-            </li>
-            <li>
-              <strong>To Comply with Legal Obligations:</strong> To comply with
-              any legal obligations or regulatory requirements.
-            </li>
-          </ul>
-
-          <h2>Sharing Your Information</h2>
+          <h2>Local website assets</h2>
           <p>
-            We may share your personal information with third parties in the
-            following circumstances:
+            Fonts, icons and images are served with the site. This project includes no analytics,
+            advertising scripts, tracking cookies or embedded maps. The service hosting a published
+            copy may process ordinary technical request logs under its own policies.
           </p>
-          <ul>
-            <li>
-              <strong>Service Providers:</strong> We may share your information
-              with third-party service providers who perform services on our
-              behalf, such as website hosting, data analysis, and customer
-              service.
-            </li>
-            <li>
-              <strong>Business Transfers:</strong> If we sell or buy any
-              business or assets, we may disclose your personal information to
-              the prospective seller or buyer of such business or assets.
-            </li>
-            <li>
-              <strong>Legal Requirements:</strong> We may disclose your
-              information if required to do so by law or in response to valid
-              requests by public authorities, such as a court or government
-              agency.
-            </li>
-          </ul>
-
-          <h2>Data Security</h2>
+          <h2>External links</h2>
           <p>
-            We take the security of your personal information seriously. We have
-            implemented appropriate technical and organizational measures to
-            protect your personal information from unauthorized access, use, or
-            disclosure. However, please note that no method of transmission over
-            the internet or method of electronic storage is completely secure.
-            While we strive to use commercially acceptable means to protect your
-            personal information, we cannot guarantee its absolute security.
+            Opening the map, email or telephone links uses a separate service or application. Their
+            privacy practices apply after you leave this site. Contact details are illustrative and
+            are not a support channel for this demo.
           </p>
-
-          <h2>Your Rights</h2>
+          <h2>About the imagery</h2>
           <p>
-            You have the right to access, correct, update, or delete the
-            personal information we hold about you. You can also object to the
-            processing of your personal information, ask us to restrict the
-            processing of your personal information, or request the portability
-            of your personal information. If you wish to exercise any of these
-            rights, please contact us at
-            <a style="color: #cda274" href="mailto:innovativeprojects@gmail.com"
-              >innovativeprojects@gmail.com</a
-            >.
+            Project images and portraits were generated for this concept. The team, projects and
+            studio descriptions are illustrative; they do not represent real commissions or verified
+            professional credentials.
           </p>
-
-          <h2>Changes to Our Privacy Policy</h2>
-          <p>
-            We may update our Privacy Policy from time to time. We will notify
-            you of any changes by posting the new Privacy Policy on our website.
-            You are advised to review this Privacy Policy periodically for any
-            changes. Changes to this Privacy Policy are effective when they are
-            posted on this page.
-          </p>
-
-          <h2>Contact Us</h2>
-          <p>
-            If you have any questions about this Privacy Policy or our privacy
-            practices, please contact us at:
-          </p>
-          <p>
-            Email:
-            <a style="color: #cda274" href="mailto:innovativeprojects@gmail.com"
-              >innovativeprojects@gmail.com</a
-            >
-          </p>
+          <a class="policy__back" href="index.html#form">Return to the enquiry form</a>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-top flex">
-          <a href="index.html" class="footer__logo logo"> INNO </a>
-          <nav class="menu">
+          <a href="index.html" class="footer__logo logo" aria-label="INNO — home"
+            ><img src="img/inno-mark.png" width="40" height="40" alt="" /><span>INNO</span></a
+          >
+          <nav class="menu" aria-label="Footer navigation">
             <ul class="menu__list flex">
               <li class="menu__item">
-                <a href="index.html"> Home </a>
+                <a href="index.html">Home</a>
               </li>
               <li class="menu__item">
-                <a href="about.html"> About Us </a>
+                <a href="about.html">The studio</a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="footer_bot flex">
-          <a href="privacy-policy.html" class="footer__bot-policy"
-            >Privacy policy</a
-          >
+        <p class="footer__note">
+          Architecture with room for real life.<br />Concept portfolio · Generated imagery and
+          fictional team.
+        </p>
+        <div class="footer-bot flex">
+          <a href="privacy-policy.html" class="footer__bot-policy">Privacy policy</a>
           <span>|</span>
-          <a href="terms-conditions.html" class="footer__bot-policy"
-            >Terms and Conditions</a
-          >
+          <a href="terms-conditions.html" class="footer__bot-policy">Terms and Conditions</a>
         </div>
       </div>
     </footer>
 
-    <script src="js/scroll.js"></script>
+    <script src="js/scroll.js" defer></script>
   </body>
 </html>
